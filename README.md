@@ -1,2 +1,22 @@
-# okila-instagram-manager
-Follow/unfollow manager with OKILA branding. Persian (RTL) and English UI, dark theme, whitelist, scan history. Uses unofficial Instagram web endpoints; use at your own risk.
+# OKILA Instagram Manager
+ابزار مدیریت فالو/آنفالو با هویت OKILA — فارسی، RTL، Dark UI. (Preact + TypeScript + esbuild)
+وب‌سایت: https://okila.ir · تلگرام: https://t.me/Okila_Academy · اینستاگرام: @o_k_i_l_a
+
+## اجرا
+1. `npm install && npm run build`
+2. فایل `dist/index.html` را روی GitHub Pages/هاست استاتیک بگذار. کاربر اسکریپت را کپی می‌کند، در instagram.com لاگین می‌کند و در Console اجرا می‌کند.
+
+## امکانات
+داشبورد (آمار، روند، تاریخچه)، لیست Followers/Following/Non-followers با جستجو، فیلتر، مرتب‌سازی، صفحه‌بندی، خروجی CSV/JSON، Whitelist دائمی (خروجی/بازیابی)، توقف/ادامه، تنظیمات، پاک‌سازی داده محلی، فارسی/English.
+
+## امنیت
+رمز عبور ذخیره نمی‌شود؛ هیچ داده‌ای به سرور خارجی ارسال نمی‌شود (فقط localStorage مرورگر)؛ توکن‌ها لاگ نمی‌شوند؛ حداقل تأخیر اجباری است؛ CAPTCHA/چک‌پوینت دور زده نمی‌شود و با اولین بلاک عملیات متوقف می‌شود؛ آنفالو فقط پس از تأیید کاربر.
+
+## محدودیت‌ها (شفاف)
+- از endpointهای **غیررسمی** وب اینستاگرام استفاده می‌شود؛ ممکن است هر زمان تغییر کنند و ریسک محدودیت اکانت وجود دارد. قابلیت تضمین‌شده نیست.
+- «آنفالوکرده‌ها» و روند تغییرات فقط از مقایسه اسکن‌های محلی به‌دست می‌آید (از اسکن دوم).
+- فونت Vazirmatn از Google Fonts لود می‌شود؛ اگر CSP اینستاگرام مسدود کند، Tahoma جایگزین می‌شود.
+- ابزار از خود سورس اصلی InstagramUnfollowers فورک نشده؛ بازنویسی مستقل است. اعلان کپی‌رایت upstream را در LICENSE بررسی/اضافه کن.
+
+## License
+MIT — see LICENSE.

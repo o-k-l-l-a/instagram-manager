@@ -1,0 +1,1 @@
+{"name":"okila-instagram-manager","version":"1.0.0","private":true,"license":"MIT","scripts":{"build":"node build.mjs","typecheck":"tsc --noEmit"},"dependencies":{"preact":"^10.24.0"},"devDependencies":{"esbuild":"^0.24.0","typescript":"^5.6.0"}}
